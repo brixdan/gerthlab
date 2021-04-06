@@ -521,10 +521,24 @@
         </div>
       </div>
     </div> <!-- END .site-section -->
+
+
+    <form action="https://getform.io/f/8b64839c-d373-41eb-8f37-da343f24d792" method="POST">
+
+      <p><input type="text" name="name">My Name</input></p>
+      <p><input type="email" name="email">brixdan@gmail.com</input></p>
+      <p><input type="text" name="message">Message text</input></p>
+      <p><button type="submit">Send</button></p>
+
+    </form>
     
     <div class="site-section" id="contact-section">
       <div class="container">
-        <form action="" class="contact-form">
+        <form class="contact-form"
+              enctype=”multipart/form-data”
+              action=”mailto:brixdan@gerthlab.com”
+              method="post"
+        >
 
           <div class="section-title text-center mb-5">
             <span class="sub-title mb-2 d-block">Get In Touch</span>
@@ -554,7 +568,7 @@
 
           <div class="row">
             <div class="col-12">
-              <button type="submit" class="btn btn-primary btn-md">Send Message</button>
+              <button type="submit" value="Submit" class="btn btn-primary btn-md">Send Message</button>
             </div>
           </div>
 
@@ -602,7 +616,11 @@
               <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
               <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 
-              <form method="post" class="form-subscribe">
+              <form method="post" class="form-subscribe"
+                    enctype=”multipart/form-data”
+                    action=”mailto:brixdan@gerthlab.com”
+
+              >
                 <div class="form-group mb-3">
                   <input type="text" class="form-control border-white text-white bg-transparent" placeholder="Enter full name" aria-label="Enter Email" aria-describedby="button-addon2">
                 </div>
